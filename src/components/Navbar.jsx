@@ -1,0 +1,25 @@
+import { Link, NavLink } from "react-router";
+// import userIcon from "../assets/user.png";
+
+const Navbar = () => {
+
+    return (
+        <div className="flex justify-between items-center">
+            <div className="grow"></div>
+            <div className="nav flex justify-center gap-5 text-accent">
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/career">Career</NavLink>
+            </div>
+            <div className="login-btn flex grow gap-5 justify-end">
+
+                <Link to="/auth/login" className="btn btn-primary px-10">
+                    Login
+                </Link>
+
+            </div>
+        </div>
+    );
+};
+
+export default Navbar;
