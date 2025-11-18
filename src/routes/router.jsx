@@ -2,9 +2,9 @@ import { createBrowserRouter } from "react-router";
 import HomeLayout from "../layouts/HomeLayout";
 import CategoryNews from "../pages/CategoryNews";
 import Home from "../pages/Home";
-// import Login from "../pages/Login";
-// import Register from "../pages/Register";
-// import AuthLayout from "../layouts/AuthLayout";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
+import AuthLayout from "../layouts/AuthLayout";
 // import NewsDetails from "../pages/NewsDetails";
 // import PrivateRoute from "../provider/PrivateRoute";
 
@@ -24,20 +24,20 @@ const router = createBrowserRouter([
       },
     ],
   },
-//   {
-//     path: "/auth",
-//     element: <AuthLayout></AuthLayout>,
-//     children: [
-//       {
-//         path: "/auth/login",
-//         element: <Login></Login>,
-//       },
-//       {
-//         path: "/auth/register",
-//         element: <Register></Register>,
-//       },
-//     ],
-//   },
+  {
+    path: "/auth",
+    element: <AuthLayout></AuthLayout>,
+    children: [
+      {
+        path: "/auth/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/auth/register",
+        element: <Register></Register>,
+      },
+    ],
+  },
 //   {
 //     path: "/news-details/:id",
 //     element: (
