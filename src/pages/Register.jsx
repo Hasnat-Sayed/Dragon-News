@@ -71,7 +71,6 @@ const Register = () => {
                             type="text"
                             className="input w-full bg-base-200"
                             placeholder="Photo URl"
-                            required
                         />
 
                         {/* email  */}

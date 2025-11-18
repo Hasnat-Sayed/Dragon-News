@@ -25,7 +25,7 @@ const Navbar = () => {
             <div className="login-btn flex flex-1 justify-end items-center gap-5">
                 <img
                     className="w-12 rounded-full"
-                    src={`${user ? user.photoURL : userIcon}`}
+                    src={`${user?.photoURL ? user.photoURL : userIcon}`}
                     alt=""
                 />
                 {user ? (
