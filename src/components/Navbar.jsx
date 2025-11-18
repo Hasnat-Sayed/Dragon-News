@@ -18,9 +18,9 @@ const Navbar = () => {
         <div className="flex flex-col md:flex-row gap-5 justify-between items-center">
             <div className="flex-1 text-accent font-semibold">{user && user.displayName}</div>
             <div className="nav flex flex-1 justify-center gap-5 text-accent">
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/about">About</NavLink>
-                <NavLink to="/career">Career</NavLink>
+                <NavLink className="hover:font-medium hover:text-black" to="/category/0">Home</NavLink>
+                <NavLink className="hover:font-medium hover:text-black" to="/about">About</NavLink>
+                <NavLink className="hover:font-medium hover:text-black" to="/career">Career</NavLink>
             </div>
             <div className="login-btn flex flex-1 justify-end items-center gap-5">
                 <img

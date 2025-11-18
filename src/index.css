@@ -23,3 +23,7 @@
 .cats a.active {
   @apply bg-base-300 text-black;
 }
+
+.nav a.active {
+  @apply font-medium text-black underline underline-offset-4;
+}
